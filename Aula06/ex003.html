@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(134, 212, 115);
+            color: white;
+            font: arial;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>vamos aprender Javascript</p>
+    <script>
+   var n1 = Number.parseFloat(window.prompt('Digite um número: '))
+   // window.prompt vai tratar o numero como string
+   var n2 = Number.parseFloat( window.prompt('Digite outro número: '))
+   var soma = n1 + n2
+
+    //window.alert('A soma entre ' + n1 + ' e ' + n2 + ' é igual a ' + soma)
+    window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`)
+    </script>
+</body>
+</html>
