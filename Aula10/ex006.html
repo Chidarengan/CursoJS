@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>eventos DOM</title>
+    <style>
+        body{
+            background-color: rgb(14, 153, 153);
+            color: white;
+            font: normal 18pt Arial;
+        }
+
+        div#area{
+            font: normal 20pt Arial;
+            background: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id = "area" >
+        Interaja...
+        <!-- o site da mozilla (mdn) tem o event reference  -->
+
+         <!-- eventos do dom. uma div pode ter por exemplo mouseenter, mousemove,mousedown, mouseup, click, mouseout. informaçoes que sao passadas de acordo com a ação feita com mouse -->
+
+         <!-- funcion ação(param){} -->
+    </div>
+    
+    <script>
+         var a = window.document.getElementById('area')
+         a.addEventListener('click', clicar)
+         a.addEventListener('mouseenter', entrar)
+         a.addEventListener('mouseout', sair)
+
+        function clicar(){
+            a.innerText = 'iiih tu clica é!'
+            a.style.background = 'red'
+        }
+
+        function entrar(){
+            a.innerText = 'clica ai po!'
+        }
+
+        function sair(){
+            a.innerText = 'Ei sai naaaao po'
+             a.style.background = 'green'
+        }
+
+    </script>
+    
+
+</body>
+</html>
