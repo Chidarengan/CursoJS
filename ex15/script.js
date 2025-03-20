@@ -38,5 +38,3 @@ function verificar(){
     res.innerHTML = `Detectamos ${genero} com ${idade} anos. `
    }
 }
-nao aguento mais essa aula. dia ruim
-configura o ctrl enter e o ctrl /
