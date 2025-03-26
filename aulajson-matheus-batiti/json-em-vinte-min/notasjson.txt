@@ -1,0 +1,3 @@
+// só aspas duplas, nao pode colocar virgula no ultimo item do array.
+
+// a respeito da possibilidade de ter comentarios num json

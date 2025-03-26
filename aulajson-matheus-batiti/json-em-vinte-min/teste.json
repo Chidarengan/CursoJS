@@ -1,0 +1,18 @@
+[{
+    "nome": "Matheus",
+    "idade": 30,
+    "esta_trabalhando": true,
+    "terraplanista": false,
+    "macaco_shaolin": null,
+    "detalhes_profissao":{
+        "profissao": "Programador",
+        "empresa":"Empresa X"
+    },
+    "hobbies": [
+        "Programar",
+        "Jogar",
+        "Assistir filmes",
+        "Ouvir música"
+    ]
+}
+]
