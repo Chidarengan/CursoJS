@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modelo de JS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+
+
+
+
+
+    <!-- o JS script normalmente a gente coloca la no final do nosso documento, no fim do body. ajuda  renderizar mais rapido pq o js é a parte mais pesada do site. pode colocar varios scripts -->
+     <h1>Aprendendo Javascript</h1>
+    <p id="texto"></p>
+
+    <p>
+        <script>
+            document.write('oi <u>escrito com document.write</u><br>' );
+
+            document.write(5+4);
+            //meio que a mesma funçao do innerHTML, ele é mais usado para testes, aceita calculos
+        </script>
+    </p>
+
+    <script>
+        alert("Olá, Mundo!");
+    </script>
+    <script src="js/index.js"></script>
+
+    <!-- tipos de saida: "html, console, alert e console.log" -->
+</body>
+</html>
