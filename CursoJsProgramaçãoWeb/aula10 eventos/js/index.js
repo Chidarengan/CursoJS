@@ -43,5 +43,13 @@ function viraRoxo(){
 
 function adicionaTexto(){
     let p = document.getElementById("texto");
-    p.append('se mexer é pilantra<br>');
-//parei a aula em 11min
+    p.append('se mexer é pilantra ');
+}
+
+// function limpaTexto(){
+//     document.getElementById("campoTexto").value = "";
+// }
+
+function mudou(){
+    console.log('mudou');
+}

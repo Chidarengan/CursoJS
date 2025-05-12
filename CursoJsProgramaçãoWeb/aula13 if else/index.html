@@ -12,8 +12,7 @@
         }
     </style>
 </head>
-<body  onmouseup="alert('clicou na tela')">
-    <!--  onmousedown="alert('clicou na tela')" -->
+<body>
     
 
 
@@ -23,18 +22,18 @@
     <!-- o JS script normalmente a gente coloca la no final do nosso documento, no fim do body. ajuda  renderizar mais rapido pq o js é a parte mais pesada do site. pode colocar varios scripts -->
      <h1>Aprendendo Javascript</h1>
     <p id="texto"></p>
-    <button onclick="eventoClick()">da uma clicada ai po, na brotheragem</button> <br>
-    <button ondblclick="eventoDblClick()">da duas clicada purfa vô</button>
 
-    <div id="teste" onmousemove="adicionaTexto()" onmouseover="viraVermelho()" onmouseout="viraRoxo()" style="margin: auto auto; width: 80%; height: 200px; background: blueviolet;" ></div>
+    <p>
+        <script>
+            document.write('oi <u>escrito com document.write</u><br>' );
 
-<br>
-
-    <input  onchange="mudou()" id="campoTexto" style="padding: 80px; font-size:40px;" type="text" placeholder="Digite alguma coisa"> 
-    <!-- tinha o onfocus q mudei pra on change 
-     tbm tem o onblur que quando desfoca da um evento"-->
+            document.write(5+4);
+            //meio que a mesma funçao do innerHTML, ele é mais usado para testes, aceita calculos
+        </script>
+    </p>
 
     <script>
+        alert("Olá, Mundo!");
     </script>
     <script src="js/index.js"></script>
 
