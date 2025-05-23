@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modelo de JS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cronômetro para Exercícios</h1>
+    <div id="contador">0</div>
+    <button id="iniciar">Iniciar</button>
+    <button id="parar" disabled>Parar</button>
+
+    <script>
+        const contadorElemento = document.getElementById("contador");
+        const botaoIniciar = document.getElementById("iniciar");
+        const botaoParar = document.getElementById("parar");
+        let intervalo;
+        let segundos = 0;
+
+        // Função para atualizar o contador
+        function atualizarContador() {
+            contadorElemento.textContent = segundos++;
+            if (segundos > 60) {
+                clearInterval(intervalo);
+                botaoIniciar.disabled = false;
+                botaoParar.disabled = true;
+                alert("Tempo esgotado! 🎉");
+            }
+        }
+
+        // Evento para iniciar o cronômetro
+        botaoIniciar.addEventListener("click", function() {
+            segundos = 0;
+            contadorElemento.textContent = "0";
+            intervalo = setInterval(atualizarContador, 1000); // Atualiza a cada 1 segundo
+            botaoIniciar.disabled = true;
+            botaoParar.disabled = false;
+        });
+
+        // Evento para parar o cronômetro
+        botaoParar.addEventListener("click", function() {
+            clearInterval(intervalo);
+            botaoIniciar.disabled = false;
+            botaoParar.disabled = true;
+        });
+    </script>
+</body>
+</html>

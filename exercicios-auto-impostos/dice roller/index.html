@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rola Dados!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rola Dados!</h1>
+
+        <div class="dice-controls">
+            <button class="roll-btn" data-dice-type="d4">Rolar D4</button>
+            <button class="roll-btn" data-dice-type="d6">Rolar D6</button>
+            <button class="roll-btn" data-dice-type="d8">Rolar D8</button>
+            <button class="roll-btn" data-dice-type="d10">Rolar D10</button>
+            <button class="roll-btn" data-dice-type="d12">Rolar D12</button>
+            <button class="roll-btn" data-dice-type="d20">Rolar D20</button>
+            <button class="roll-btn" data-dice-type="d100">Rolar D100</button>
+        </div>
+
+        <div id="dice-canvas"></div>
+
+        <div class="result-display">
+            <p>Resultado: <span id="roll-result">Nenhum</span></p>
+        </div>
+    </div>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@3d-dice/dice-box@1.0.3/dist/dice-box.min.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
