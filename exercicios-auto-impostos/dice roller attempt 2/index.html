@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dice Roller</h1>
+        
+        <div class="dice-container">
+            <div class="dice-option" data-sides="4">
+                <div class="dice-shape d4"></div>
+                <span>d4</span>
+            </div>
+            <div class="dice-option" data-sides="6">
+                <div class="dice-shape d6"></div>
+                <span>d6</span>
+            </div>
+            <div class="dice-option" data-sides="8">
+                <div class="dice-shape d8"></div>
+                <span>d8</span>
+            </div>
+            <div class="dice-option" data-sides="10">
+                <div class="dice-shape d10"></div>
+                <span>d10</span>
+            </div>
+            <div class="dice-option" data-sides="12">
+                <div class="dice-shape d12"></div>
+                <span>d12</span>
+            </div>
+            <div class="dice-option" data-sides="20">
+                <div class="dice-shape d20"></div>
+                <span>d20</span>
+            </div>
+            <div class="dice-option" data-sides="100">
+                <div class="dice-shape d100"></div>
+                <span>d100</span>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="roll-btn">Roll Dice</button>
+            <div class="quantity-control">
+                <button id="decrease">-</button>
+                <span id="quantity">1</span>
+                <button id="increase">+</button>
+            </div>
+        </div>
+        
+        <div class="results">
+            <h2>Results</h2>
+            <div id="result-display"></div>
+            <div id="total">Total: 0</div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
